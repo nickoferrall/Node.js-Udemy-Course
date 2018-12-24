@@ -1,6 +1,8 @@
 const express = require("express");
 
-const app = express();
+var app = express();
+
+app.use(express.static(__dirname + "/public"));
 
 app.get("/", (req, res) => {
   //   res.send("<h1>Hello express</h1>");
